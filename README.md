@@ -85,7 +85,7 @@ docker login       `Give Dockerhub credentials here`
 ```bash
 curl -sSfL https://raw.githubusercontent.com/docker/scout-cli/main/install.sh | sh -s -- -b /usr/local/bin
 ```
-##Version Check
+## Version Check
 ```bash
 docker -v
 docker compose --version

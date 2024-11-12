@@ -10,7 +10,7 @@ sudo timedatectl set-ntp on
 
 #curl ve wget yükle
 sudo apt-get install curl
-sudo apt-get install curl
+sudo apt-get install wget
 sudo apt-get install git -y
 
 #install java

@@ -92,6 +92,10 @@ docker scout quickview serdarbayram/netflix:latest
 docker scout cves serdarbayram/netflix:latest
 docker scout recommendations serdarbayram/netflix:latest
 ```
+```bash
+# Jenkins job Permission Denied hatası ile karşılaşılması durumunda
+sudo chmod -R 777 /tmp/docker-scout
+```
 ## Version Check
 ```bash
 docker -v

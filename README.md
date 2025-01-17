@@ -86,6 +86,12 @@ docker login       `Give Dockerhub credentials here`
 curl -fsSL https://raw.githubusercontent.com/docker/scout-cli/main/install.sh -o install-scout.sh
 sh install-scout.sh
 ```
+```bash
+#Manual check CLI Exam
+docker scout quickview serdarbayram/netflix:latest
+docker scout cves serdarbayram/netflix:latest
+docker scout recommendations serdarbayram/netflix:latest
+```
 ## Version Check
 ```bash
 docker -v

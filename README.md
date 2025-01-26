@@ -83,8 +83,11 @@ sudo apt-get install trivy
 docker login       `Give Dockerhub credentials here`
 ```
 ```bash
-curl -sSfL https://raw.githubusercontent.com/docker/scout-cli/main/install.sh | sh -s -- -b /usr/local/bin
+curl -fsSL https://raw.githubusercontent.com/docker/scout-cli/main/install.sh -o install-scout.sh
 sh install-scout.sh
+```
+```bash
+curl -sSfL https://raw.githubusercontent.com/docker/scout-cli/main/install.sh | sh -s -- -b /usr/local/bin
 ```
 ```bash
 # Jenkins job Permission Denied hatası ile karşılaşılmaması için dizine yazma izni veriyoruz.

@@ -83,18 +83,18 @@ sudo apt-get install trivy
 docker login       `Give Dockerhub credentials here`
 ```
 ```bash
-curl -fsSL https://raw.githubusercontent.com/docker/scout-cli/main/install.sh -o install-scout.sh
+curl -sSfL https://raw.githubusercontent.com/docker/scout-cli/main/install.sh | sh -s -- -b /usr/local/bin
 sh install-scout.sh
+```
+```bash
+# Jenkins job Permission Denied hatası ile karşılaşılmaması için dizine yazma izni veriyoruz.
+sudo chmod -R 777 /tmp/docker-scout
 ```
 ```bash
 #Manual check CLI Exam
 docker scout quickview serdarbayram/netflix:latest
 docker scout cves serdarbayram/netflix:latest
 docker scout recommendations serdarbayram/netflix:latest
-```
-```bash
-# Jenkins job Permission Denied hatası ile karşılaşılması durumunda
-sudo chmod -R 777 /tmp/docker-scout
 ```
 ## Version Check
 ```bash
